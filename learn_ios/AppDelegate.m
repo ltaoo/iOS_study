@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+// 导入主视图
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];// 设置窗口
+    self.viewController = [[ViewController alloc] init];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];// 设置viewController 为根视图
+    self.viewController.title = @"主页";// 设置视图的 title 属性，会自动显示在中间
+    //nav.navigationBarHidden = YES;
+    self.window.rootViewController = self.navController;// 控制应用启动实例化这个
+    [self.window makeKeyAndVisible];//显示
     return YES;
 }
 
