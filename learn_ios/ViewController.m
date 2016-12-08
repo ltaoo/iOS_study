@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,7 @@
     // 添加导航的按钮，为什么要在这里加？
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(selectLeftAction:)];
     self.navigationItem.leftBarButtonItem = leftButton;
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(selectRightAction:)];
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(gotoSecondView:)];
     self.navigationItem.rightBarButtonItem = rightButton;
     
 }
@@ -44,9 +45,17 @@
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"点击了右按钮" preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *_Nonnull action) {
         // 点击按钮的响应事件
+        
     }]];
     // 弹出提示框
     [self presentViewController:alert animated:true completion:nil];
+}
+
+- (void)gotoSecondView:(id)sender {
+    // 在这里跳转页面
+    SecondViewController *secondViewController = [[SecondViewController alloc] init];
+    secondViewController.title = @"个人中心";
+    [self.navigationController pushViewController:secondViewController animated:YES];
 }
 
 
