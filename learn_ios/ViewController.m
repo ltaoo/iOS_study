@@ -8,9 +8,14 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
+// 内容视图
+#import "TableView.h"
 
 @interface ViewController ()
-
+{
+    // 表示实例化了一个对象吗？
+    TableView *table;
+}
 @end
 
 @implementation ViewController
@@ -25,7 +30,23 @@
     self.navigationItem.leftBarButtonItem = leftButton;
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(gotoSecondView:)];
     self.navigationItem.rightBarButtonItem = rightButton;
+    // 初始化内容
+    table = [[TableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    // 设置数据源
+    table.textLabel_MArray = [[NSMutableArray alloc] initWithObjects:@"第一天", @"第二天", @"第三天", nil];
     
+    NSMutableArray *subtitle = [NSMutableArray array];
+    
+    for(NSInteger index = 0; index < [table.textLabel_MArray count];index++) {
+        // 详情内容
+        NSString *detail = [NSString stringWithFormat:@"detail text %ld", index+1];
+        
+        [subtitle addObject:detail];
+    }
+    
+    table.subtitle_MArray = [[NSMutableArray alloc] initWithArray:subtitle];
+    
+    [self.view addSubview:table];
 }
 
 - (void)selectLeftAction:(id)sender {

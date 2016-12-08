@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E10350A1DF995F000B46350 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1035091DF995F000B46350 /* SecondViewController.m */; };
+		8E1035101DF9B96C00B46350 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E10350F1DF9B96C00B46350 /* TableView.m */; };
 		8E756D7F1DD36C9D00C1A0E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E756D7E1DD36C9D00C1A0E4 /* main.m */; };
 		8E756D821DD36C9D00C1A0E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E756D811DD36C9D00C1A0E4 /* AppDelegate.m */; };
 		8E756D851DD36C9D00C1A0E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E756D841DD36C9D00C1A0E4 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* Begin PBXFileReference section */
 		8E1035081DF995F000B46350 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../SecondViewController.h; sourceTree = "<group>"; };
 		8E1035091DF995F000B46350 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../SecondViewController.m; sourceTree = "<group>"; };
+		8E10350E1DF9B96C00B46350 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableView.h; path = Project01/TableView.h; sourceTree = "<group>"; };
+		8E10350F1DF9B96C00B46350 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableView.m; path = Project01/TableView.m; sourceTree = "<group>"; };
 		8E756D7A1DD36C9D00C1A0E4 /* learn_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learn_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E756D7E1DD36C9D00C1A0E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E756D801DD36C9D00C1A0E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 				8E756D811DD36C9D00C1A0E4 /* AppDelegate.m */,
 				8E756D831DD36C9D00C1A0E4 /* ViewController.h */,
 				8E756D841DD36C9D00C1A0E4 /* ViewController.m */,
+				8E10350E1DF9B96C00B46350 /* TableView.h */,
+				8E10350F1DF9B96C00B46350 /* TableView.m */,
 				8E1035081DF995F000B46350 /* SecondViewController.h */,
 				8E1035091DF995F000B46350 /* SecondViewController.m */,
 				8E756D891DD36C9D00C1A0E4 /* Assets.xcassets */,
@@ -154,6 +159,7 @@
 				8E10350A1DF995F000B46350 /* SecondViewController.m in Sources */,
 				8E756D851DD36C9D00C1A0E4 /* ViewController.m in Sources */,
 				8E756D821DD36C9D00C1A0E4 /* AppDelegate.m in Sources */,
+				8E1035101DF9B96C00B46350 /* TableView.m in Sources */,
 				8E756D7F1DD36C9D00C1A0E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
