@@ -7,8 +7,9 @@
 //
 
 #import "TableView.h"
+#import "SecondViewController.h"
 
-@interface TableView ()<UITableViewDataSource, UITableViewDelegate>
+@interface TableView ()
 
 @end
 
@@ -28,6 +29,7 @@
 {
     self = [super initWithFrame:frame style:style];
     if(self) {
+        // 声明自己是委托者的被委托者。
         self.delegate = self;
         self.dataSource = self;
     }
@@ -59,18 +61,17 @@
     return [_textLabel_MArray count];
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    return @"页眉";
-}
+//-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return @"页眉";
+//}
 
--(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-{
-    return @"页脚";
-}
+//-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+//{
+//    return @"页脚";
+//}
 
 // 实现每一行 cell 的内容
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"cellIdentifier";
@@ -88,6 +89,13 @@
     cell.detailTextLabel.text = [_subtitle_MArray objectAtIndex:indexPath.row];
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // 每一行被点击的事件
+    SecondViewController *nextPage = [[SecondViewController alloc] init];
+    nextPage.title = @"第一天";
+    NSLog(@"you selected section %ld row %ld", (long)indexPath.section, (long)indexPath.row);
 }
 
 @end

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-// 最后面的是协议
-@interface TableView : UITableView
+// TableView 是被委托者，声明自己实现了被委托了 UITableViewDataSource 和 UITableViewDelegate 两个协议
+@interface TableView : UITableView<UITableViewDataSource, UITableViewDelegate>
 // tableView 的位置
 @property (nonatomic, assign) CGRect tableViewFrame;
 // 存放在 cell 各行上 textLabel，即标题
