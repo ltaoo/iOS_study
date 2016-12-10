@@ -8,6 +8,8 @@
 
 #import "projectListController.h"
 #import "SecondViewController.h"
+// 第三天 counter
+#import "Counter.h"
 
 @interface projectListController ()
 
@@ -37,7 +39,7 @@
 }
 // 每个 section 有多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 
@@ -63,7 +65,15 @@
 {
     SecondViewController *secondView = [[SecondViewController alloc]init];
     secondView.title = @"第二天";
-    [self.navigationController pushViewController:secondView animated:YES];
+    // 第三天 counter
+    Counter *counterPage = [[Counter alloc] init];
+    counterPage.title = @"Counter";
+    // switch 分支处理点击事件
+    if(indexPath.row == 2) {
+        [self.navigationController pushViewController:counterPage animated:YES];
+    } else {
+        [self.navigationController pushViewController:secondView animated:YES];
+    }
 }
 
 
