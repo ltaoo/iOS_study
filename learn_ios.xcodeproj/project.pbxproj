@@ -11,6 +11,7 @@
 		8E1035101DF9B96C00B46350 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E10350F1DF9B96C00B46350 /* TableView.m */; };
 		8E1143461DFC431E004982EC /* projectListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1143451DFC431E004982EC /* projectListController.m */; };
 		8E1143491DFC4C23004982EC /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1143481DFC4C23004982EC /* Counter.m */; };
+		8E330A691DFD3908004D1220 /* TipCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E330A681DFD3908004D1220 /* TipCalculator.m */; };
 		8E756D7F1DD36C9D00C1A0E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E756D7E1DD36C9D00C1A0E4 /* main.m */; };
 		8E756D821DD36C9D00C1A0E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E756D811DD36C9D00C1A0E4 /* AppDelegate.m */; };
 		8E756D851DD36C9D00C1A0E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E756D841DD36C9D00C1A0E4 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 		8E1143451DFC431E004982EC /* projectListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = projectListController.m; path = Project01/projectListController.m; sourceTree = "<group>"; };
 		8E1143471DFC4C23004982EC /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Counter.h; path = Project03/Counter.h; sourceTree = "<group>"; };
 		8E1143481DFC4C23004982EC /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Counter.m; path = Project03/Counter.m; sourceTree = "<group>"; };
+		8E330A671DFD3908004D1220 /* TipCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TipCalculator.h; path = Project04/TipCalculator.h; sourceTree = "<group>"; };
+		8E330A681DFD3908004D1220 /* TipCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TipCalculator.m; path = Project04/TipCalculator.m; sourceTree = "<group>"; };
 		8E756D7A1DD36C9D00C1A0E4 /* learn_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learn_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E756D7E1DD36C9D00C1A0E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E756D801DD36C9D00C1A0E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				8E1143451DFC431E004982EC /* projectListController.m */,
 				8E1143471DFC4C23004982EC /* Counter.h */,
 				8E1143481DFC4C23004982EC /* Counter.m */,
+				8E330A671DFD3908004D1220 /* TipCalculator.h */,
+				8E330A681DFD3908004D1220 /* TipCalculator.m */,
 				8E1035081DF995F000B46350 /* SecondViewController.h */,
 				8E1035091DF995F000B46350 /* SecondViewController.m */,
 				8E756D891DD36C9D00C1A0E4 /* Assets.xcassets */,
@@ -167,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E10350A1DF995F000B46350 /* SecondViewController.m in Sources */,
+				8E330A691DFD3908004D1220 /* TipCalculator.m in Sources */,
 				8E756D851DD36C9D00C1A0E4 /* ViewController.m in Sources */,
 				8E756D821DD36C9D00C1A0E4 /* AppDelegate.m in Sources */,
 				8E1035101DF9B96C00B46350 /* TableView.m in Sources */,

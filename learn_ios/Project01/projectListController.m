@@ -10,6 +10,8 @@
 #import "SecondViewController.h"
 // 第三天 counter
 #import "Counter.h"
+// 第四天 tip calculator
+#import "TipCalculator.h"
 
 @interface projectListController ()
 
@@ -25,6 +27,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    _projects = [[NSMutableArray alloc] initWithObjects:@"第一天", @"第二天", @"第三天", @"第四天", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,7 +42,7 @@
 }
 // 每个 section 有多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return [_projects count];
 }
 
 
@@ -54,23 +57,27 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     // 设置内容
-    //cell.textLabel.text = [_textLabel_MArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [_projects objectAtIndex:indexPath.row];
     // cell.imageView.text = [_textLabel_MArray objectAtIndex:indexPath.row];
     //cell.detailTextLabel.text = [_subtitle_MArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = @"hello";
     return cell;
 }
 // 当 row 被选择时触发
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SecondViewController *secondView = [[SecondViewController alloc]init];
-    secondView.title = @"第二天";
+    secondView.title = @"Navigator";
     // 第三天 counter
     Counter *counterPage = [[Counter alloc] init];
     counterPage.title = @"Counter";
+    // 第四天 tip calculator
+    TipCalculator *tipCalculator = [[TipCalculator alloc] init];
+    tipCalculator.title = @"Tip Calculator";
     // switch 分支处理点击事件
     if(indexPath.row == 2) {
         [self.navigationController pushViewController:counterPage animated:YES];
+    } else if(indexPath.row == 3) {
+        [self.navigationController pushViewController:tipCalculator animated:YES];
     } else {
         [self.navigationController pushViewController:secondView animated:YES];
     }

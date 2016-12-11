@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface projectListController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
-
+@property (nonatomic, copy)NSMutableArray *projects;
 @end
