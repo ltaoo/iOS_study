@@ -12,6 +12,8 @@
 #import "Counter.h"
 // 第四天 tip calculator
 #import "TipCalculator.h"
+// 第五天
+#import "CurrentDate.h"
 
 @interface projectListController ()
 
@@ -27,7 +29,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _projects = [[NSMutableArray alloc] initWithObjects:@"第一天", @"第二天", @"第三天", @"第四天", nil];
+    _projects = [[NSMutableArray alloc] initWithObjects:@"第一天", @"第二天", @"第三天", @"第四天", @"第五天", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,12 +75,19 @@
     // 第四天 tip calculator
     TipCalculator *tipCalculator = [[TipCalculator alloc] init];
     tipCalculator.title = @"Tip Calculator";
+    // 第五天 时间
+    CurrentDate *currentDate = [[CurrentDate alloc] init];
+    currentDate.title = @"Current Date";
     // switch 分支处理点击事件
     if(indexPath.row == 2) {
         [self.navigationController pushViewController:counterPage animated:YES];
     } else if(indexPath.row == 3) {
         [self.navigationController pushViewController:tipCalculator animated:YES];
-    } else {
+    }
+    else if(indexPath.row == 4) {
+        [self.navigationController pushViewController:currentDate animated:YES];
+    }
+    else {
         [self.navigationController pushViewController:secondView animated:YES];
     }
 }
