@@ -18,6 +18,7 @@
 		8E756D851DD36C9D00C1A0E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E756D841DD36C9D00C1A0E4 /* ViewController.m */; };
 		8E756D8A1DD36C9D00C1A0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E756D891DD36C9D00C1A0E4 /* Assets.xcassets */; };
 		8E756D8D1DD36C9D00C1A0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E756D8B1DD36C9D00C1A0E4 /* LaunchScreen.storyboard */; };
+		8E7F2B2B1E019B74005D9AFD /* PassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F2B2A1E019B74005D9AFD /* PassData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		8E756D891DD36C9D00C1A0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E756D8C1DD36C9D00C1A0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E756D8E1DD36C9D00C1A0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7F2B291E019B74005D9AFD /* PassData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassData.h; path = Project06/PassData.h; sourceTree = "<group>"; };
+		8E7F2B2A1E019B74005D9AFD /* PassData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassData.m; path = Project06/PassData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				8E330A681DFD3908004D1220 /* TipCalculator.m */,
 				8E41B4671DFEEE9B0063A2F0 /* CurrentDate.h */,
 				8E41B4681DFEEE9B0063A2F0 /* CurrentDate.m */,
+				8E7F2B291E019B74005D9AFD /* PassData.h */,
+				8E7F2B2A1E019B74005D9AFD /* PassData.m */,
 				8E1035081DF995F000B46350 /* SecondViewController.h */,
 				8E1035091DF995F000B46350 /* SecondViewController.m */,
 				8E756D891DD36C9D00C1A0E4 /* Assets.xcassets */,
@@ -132,7 +137,7 @@
 		8E756D721DD36C9D00C1A0E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = ltaoo;
 				TargetAttributes = {
 					8E756D791DD36C9D00C1A0E4 = {
@@ -184,6 +189,7 @@
 				8E1035101DF9B96C00B46350 /* TableView.m in Sources */,
 				8E756D7F1DD36C9D00C1A0E4 /* main.m in Sources */,
 				8E1143491DFC4C23004982EC /* Counter.m in Sources */,
+				8E7F2B2B1E019B74005D9AFD /* PassData.m in Sources */,
 				8E1143461DFC431E004982EC /* projectListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +226,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -268,6 +275,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

@@ -17,9 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIColor *gray = [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1];
-    self.view.backgroundColor = gray;
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    // Lable 显示传过来的值
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, self.view.frame.size.width, 100)];
+    label.backgroundColor = [UIColor whiteColor];
+    label.font = [UIFont systemFontOfSize:20];
+    label.numberOfLines = 0;
+    label.text = self.data;
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning {
