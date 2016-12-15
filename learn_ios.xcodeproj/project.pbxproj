@@ -11,6 +11,7 @@
 		8E1035101DF9B96C00B46350 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E10350F1DF9B96C00B46350 /* TableView.m */; };
 		8E1143461DFC431E004982EC /* projectListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1143451DFC431E004982EC /* projectListController.m */; };
 		8E1143491DFC4C23004982EC /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1143481DFC4C23004982EC /* Counter.m */; };
+		8E1807951E02D76C00627CCE /* HiddenKeyborad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1807941E02D76C00627CCE /* HiddenKeyborad.m */; };
 		8E330A691DFD3908004D1220 /* TipCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E330A681DFD3908004D1220 /* TipCalculator.m */; };
 		8E41B4691DFEEE9B0063A2F0 /* CurrentDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41B4681DFEEE9B0063A2F0 /* CurrentDate.m */; };
 		8E756D7F1DD36C9D00C1A0E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E756D7E1DD36C9D00C1A0E4 /* main.m */; };
@@ -30,6 +31,8 @@
 		8E1143451DFC431E004982EC /* projectListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = projectListController.m; path = Project01/projectListController.m; sourceTree = "<group>"; };
 		8E1143471DFC4C23004982EC /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Counter.h; path = Project03/Counter.h; sourceTree = "<group>"; };
 		8E1143481DFC4C23004982EC /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Counter.m; path = Project03/Counter.m; sourceTree = "<group>"; };
+		8E1807931E02D76C00627CCE /* HiddenKeyborad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HiddenKeyborad.h; path = Project07/HiddenKeyborad.h; sourceTree = "<group>"; };
+		8E1807941E02D76C00627CCE /* HiddenKeyborad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HiddenKeyborad.m; path = Project07/HiddenKeyborad.m; sourceTree = "<group>"; };
 		8E330A671DFD3908004D1220 /* TipCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TipCalculator.h; path = Project04/TipCalculator.h; sourceTree = "<group>"; };
 		8E330A681DFD3908004D1220 /* TipCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TipCalculator.m; path = Project04/TipCalculator.m; sourceTree = "<group>"; };
 		8E41B4671DFEEE9B0063A2F0 /* CurrentDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentDate.h; path = Project05/CurrentDate.h; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 				8E41B4681DFEEE9B0063A2F0 /* CurrentDate.m */,
 				8E7F2B291E019B74005D9AFD /* PassData.h */,
 				8E7F2B2A1E019B74005D9AFD /* PassData.m */,
+				8E1807931E02D76C00627CCE /* HiddenKeyborad.h */,
+				8E1807941E02D76C00627CCE /* HiddenKeyborad.m */,
 				8E1035081DF995F000B46350 /* SecondViewController.h */,
 				8E1035091DF995F000B46350 /* SecondViewController.m */,
 				8E756D891DD36C9D00C1A0E4 /* Assets.xcassets */,
@@ -189,6 +194,7 @@
 				8E1035101DF9B96C00B46350 /* TableView.m in Sources */,
 				8E756D7F1DD36C9D00C1A0E4 /* main.m in Sources */,
 				8E1143491DFC4C23004982EC /* Counter.m in Sources */,
+				8E1807951E02D76C00627CCE /* HiddenKeyborad.m in Sources */,
 				8E7F2B2B1E019B74005D9AFD /* PassData.m in Sources */,
 				8E1143461DFC431E004982EC /* projectListController.m in Sources */,
 			);
