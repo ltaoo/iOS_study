@@ -18,6 +18,8 @@
 #import "PassData.h"
 // 第七天
 #import "HiddenKeyborad.h"
+// 第八天
+#import "GetPhoto.h"
 
 @interface projectListController ()
 
@@ -33,7 +35,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _projects = [[NSMutableArray alloc] initWithObjects:@"第一天", @"第二天", @"第三天", @"第四天", @"第五天", @"第六天", @"第七天", nil];
+    _projects = [[NSMutableArray alloc] initWithObjects:@"第一天", @"第二天", @"第三天", @"第四天", @"第五天", @"第六天", @"第七天",@"第八天", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -88,6 +90,9 @@
     // 第七天
     HiddenKeyborad *hiddenKeyborad = [[HiddenKeyborad alloc] init];
     hiddenKeyborad.title = @"隐藏键盘";
+    // 第八天 从相册获取照片
+    GetPhoto *getPhoto = [[GetPhoto alloc] init];
+    getPhoto.title = @"获取照片";
     // switch 分支处理点击事件
     if(indexPath.row == 2) {
         [self.navigationController pushViewController:counterPage animated:YES];
@@ -102,6 +107,9 @@
     }
     else if(indexPath.row == 6) {
         [self.navigationController pushViewController:hiddenKeyborad animated:YES];
+    }
+    else if(indexPath.row == 7) {
+        [self.navigationController pushViewController:getPhoto animated:YES];
     }
     else {
         [self.navigationController pushViewController:secondView animated:YES];
