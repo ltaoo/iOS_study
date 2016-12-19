@@ -23,6 +23,7 @@
 		8E756D8A1DD36C9D00C1A0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E756D891DD36C9D00C1A0E4 /* Assets.xcassets */; };
 		8E756D8D1DD36C9D00C1A0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E756D8B1DD36C9D00C1A0E4 /* LaunchScreen.storyboard */; };
 		8E7F2B2B1E019B74005D9AFD /* PassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F2B2A1E019B74005D9AFD /* PassData.m */; };
+		8E93DDDA1E0833EF0061FF53 /* DeleteItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E93DDD91E0833EF0061FF53 /* DeleteItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		8E756D8E1DD36C9D00C1A0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E7F2B291E019B74005D9AFD /* PassData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassData.h; path = Project06/PassData.h; sourceTree = "<group>"; };
 		8E7F2B2A1E019B74005D9AFD /* PassData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassData.m; path = Project06/PassData.m; sourceTree = "<group>"; };
+		8E93DDD81E0833EF0061FF53 /* DeleteItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeleteItem.h; path = Project10/DeleteItem.h; sourceTree = "<group>"; };
+		8E93DDD91E0833EF0061FF53 /* DeleteItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeleteItem.m; path = Project10/DeleteItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				8E0A72401E042E6200AD744D /* GetPhoto.m */,
 				8E6F94F91E0553B2000AA1EA /* PullDownRefresh.h */,
 				8E6F94FA1E0553B2000AA1EA /* PullDownRefresh.m */,
+				8E93DDD81E0833EF0061FF53 /* DeleteItem.h */,
+				8E93DDD91E0833EF0061FF53 /* DeleteItem.m */,
 				8E1035081DF995F000B46350 /* SecondViewController.h */,
 				8E1035091DF995F000B46350 /* SecondViewController.m */,
 				8E756D891DD36C9D00C1A0E4 /* Assets.xcassets */,
@@ -213,6 +218,7 @@
 				8E7F2B2B1E019B74005D9AFD /* PassData.m in Sources */,
 				8E1143461DFC431E004982EC /* projectListController.m in Sources */,
 				8E0A72411E042E6200AD744D /* GetPhoto.m in Sources */,
+				8E93DDDA1E0833EF0061FF53 /* DeleteItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
