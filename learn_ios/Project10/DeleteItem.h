@@ -10,6 +10,6 @@
 
 @interface DeleteItem : UITableViewController
 
-// 挂着 this 上的属性
+// 挂在 this 上的属性
 @property (nonatomic, strong) NSMutableArray * Logs;
 @end

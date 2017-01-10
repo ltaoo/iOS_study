@@ -24,6 +24,8 @@
 #import "PullDownRefresh.h"
 // 第十天
 #import "DeleteItem.h"
+// 第十一天
+#import "AddNewItem.h"
 
 @interface projectListController ()
 
@@ -39,7 +41,20 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _projects = [[NSMutableArray alloc] initWithObjects:@"第一天", @"第二天", @"第三天", @"第四天", @"第五天", @"第六天", @"第七天",@"第八天", @"第九天", @"第十天", nil];
+    _projects = [[NSMutableArray alloc]
+                 initWithObjects:
+                    @"第一天",
+                    @"第二天",
+                    @"第三天",
+                    @"第四天",
+                    @"第五天",
+                    @"第六天",
+                    @"第七天",
+                    @"第八天",
+                    @"第九天",
+                    @"第十天",
+                    @"第十一天",
+                 nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -103,6 +118,9 @@
     // 第十天 删除指定行
     DeleteItem *deleteItem = [[DeleteItem alloc] init];
     deleteItem.title = @"删除指定行";
+    // 第十一天
+    AddNewItem *addNewItem = [[AddNewItem alloc] init];
+    addNewItem.title = @"添加新数据";
     // switch 分支处理点击事件
     if(indexPath.row == 2) {
         [self.navigationController pushViewController:counterPage animated:YES];
@@ -126,6 +144,9 @@
     }
     else if(indexPath.row == 9) {
         [self.navigationController pushViewController:deleteItem animated:YES];
+    }
+    else if(indexPath.row == 10) {
+        [self.navigationController pushViewController:addNewItem animated:YES];
     }
     else {
         [self.navigationController pushViewController:secondView animated:YES];

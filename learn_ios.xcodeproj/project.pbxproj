@@ -24,6 +24,8 @@
 		8E756D8D1DD36C9D00C1A0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E756D8B1DD36C9D00C1A0E4 /* LaunchScreen.storyboard */; };
 		8E7F2B2B1E019B74005D9AFD /* PassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F2B2A1E019B74005D9AFD /* PassData.m */; };
 		8E93DDDA1E0833EF0061FF53 /* DeleteItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E93DDD91E0833EF0061FF53 /* DeleteItem.m */; };
+		8E9CF0C91E251A7100DE9725 /* AddNewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CF0C81E251A7100DE9725 /* AddNewItem.m */; };
+		8E9CF0CC1E25225100DE9725 /* AddNewItemSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CF0CB1E25225100DE9725 /* AddNewItemSub.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,10 @@
 		8E7F2B2A1E019B74005D9AFD /* PassData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassData.m; path = Project06/PassData.m; sourceTree = "<group>"; };
 		8E93DDD81E0833EF0061FF53 /* DeleteItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeleteItem.h; path = Project10/DeleteItem.h; sourceTree = "<group>"; };
 		8E93DDD91E0833EF0061FF53 /* DeleteItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeleteItem.m; path = Project10/DeleteItem.m; sourceTree = "<group>"; };
+		8E9CF0C71E251A7100DE9725 /* AddNewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddNewItem.h; path = Project11/AddNewItem.h; sourceTree = "<group>"; };
+		8E9CF0C81E251A7100DE9725 /* AddNewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddNewItem.m; path = Project11/AddNewItem.m; sourceTree = "<group>"; };
+		8E9CF0CA1E25225100DE9725 /* AddNewItemSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddNewItemSub.h; path = Project11/AddNewItemSub.h; sourceTree = "<group>"; };
+		8E9CF0CB1E25225100DE9725 /* AddNewItemSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddNewItemSub.m; path = Project11/AddNewItemSub.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				8E6F94FA1E0553B2000AA1EA /* PullDownRefresh.m */,
 				8E93DDD81E0833EF0061FF53 /* DeleteItem.h */,
 				8E93DDD91E0833EF0061FF53 /* DeleteItem.m */,
+				8E9CF0C71E251A7100DE9725 /* AddNewItem.h */,
+				8E9CF0C81E251A7100DE9725 /* AddNewItem.m */,
+				8E9CF0CA1E25225100DE9725 /* AddNewItemSub.h */,
+				8E9CF0CB1E25225100DE9725 /* AddNewItemSub.m */,
 				8E1035081DF995F000B46350 /* SecondViewController.h */,
 				8E1035091DF995F000B46350 /* SecondViewController.m */,
 				8E756D891DD36C9D00C1A0E4 /* Assets.xcassets */,
@@ -207,9 +217,11 @@
 			files = (
 				8E41B4691DFEEE9B0063A2F0 /* CurrentDate.m in Sources */,
 				8E6F94FB1E0553B2000AA1EA /* PullDownRefresh.m in Sources */,
+				8E9CF0C91E251A7100DE9725 /* AddNewItem.m in Sources */,
 				8E10350A1DF995F000B46350 /* SecondViewController.m in Sources */,
 				8E330A691DFD3908004D1220 /* TipCalculator.m in Sources */,
 				8E756D851DD36C9D00C1A0E4 /* ViewController.m in Sources */,
+				8E9CF0CC1E25225100DE9725 /* AddNewItemSub.m in Sources */,
 				8E756D821DD36C9D00C1A0E4 /* AppDelegate.m in Sources */,
 				8E1035101DF9B96C00B46350 /* TableView.m in Sources */,
 				8E756D7F1DD36C9D00C1A0E4 /* main.m in Sources */,
